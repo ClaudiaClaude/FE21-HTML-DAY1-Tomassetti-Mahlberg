@@ -7,34 +7,51 @@
     <title>Example Form</title>
 </head>
 <body>
+
+    <h1>Welcome to the doctor's office</h1>
+    <h3>Please book your appointment with the form down below.</h3>
     <form action="action_page.php">
-        <label>First name:</label>
-            <input type="text" name="firstname" placeholder="write your firstname..."><br>
-        <label>Last name:</label>
-            <input type="text" name="lastname"  placeholder="write your last name..."><br/>
-        <br/>
+        <section>
+            <label>First name:</label>
+                <input type="text" name="firstname" placeholder="write your first name..."><br>
+            <label>Last name:</label>
+                <input type="text" name="lastname"  placeholder="write your last name..."><br/>
+            <br/>
+        </section>
 
-        <label>social security number:</label>
-            <input type="text" placeholder="1234 010190">
- <br/>
- <label>Select gender:</label><br/>
-        <select name="areyouaboyorareyouagirl">
-            <option value="male">Male</option>
-            <option value="female" selected>Female</option>
-            <option value="other">Other</option>
-        </select>
+        <section>
 
-        <label>What's your appointmrnt about:</label><br/>
-        <input type="radio" name="appointment" value="yearly_checkup"  checked>Yearly checkup<br/>
-        <input type="radio" name="appointment" value="first_visit">First visit<br/>
-        <input type="radio" name="appointment" value="followup_visit">Follow up visit<br/>
+            <label>Social Security Number:</label>
+                <input type="text" placeholder="1234 010190">
+            <br/><br>
+            <label>Select gender:</label>
 
-        <br/><br/>
-        Tell us something about your appointment <br/>
-        <textarea name="message" rows="8" cols="40" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu."></textarea>
-        <br/>
-        <br/>
-        <input type="submit" value="Submit your data">
+            <select name="areyouaboyorareyouagirl">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="non_binary">Non Binary</option>
+                <option value="non_specified">Would rather not say</option>
+            </select>
+           
+
+        </section>
+
+        <section>
+            <br>
+
+            <label>What's your appointment about:</label><br/>
+            <input type="radio" name="appointment" value="yearly_checkup"  checked>Yearly checkup<br/>
+            <input type="radio" name="appointment" value="first_visit">First visit<br/>
+            <input type="radio" name="appointment" value="followup_visit">Follow up visit<br/>
+
+            <br/><br/>
+            Tell us something about your appointment <br/><br>
+            <textarea name="message" rows="8" cols="40" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu."></textarea>
+            <br/>
+            <br/>
+            <input type="submit" value="Book your appointment">
+
+        </section>
     </form>   
 </body>
 </html>
