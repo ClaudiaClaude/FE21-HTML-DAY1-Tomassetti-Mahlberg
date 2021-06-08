@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Form</title>
+</head>
+<body>
+    <form action="action_page.php">
+        <label>First name:</label>
+            <input type="text" name="firstname" placeholder="write your firstname..."><br>
+        <label>Last name:</label>
+            <input type="text" name="lastname"  placeholder="write your last name..."><br/>
+        <br/>
+
+        <label>social security number:</label>
+            <input type="text" placeholder="1234 010190">
+ <br/>
+ <label>Select gender:</label><br/>
+        <select name="areyouaboyorareyouagirl">
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>What's your appointmrnt about:</label><br/>
+        <input type="radio" name="appointment" value="yearly_checkup"  checked>Yearly checkup<br/>
+        <input type="radio" name="appointment" value="first_visit">First visit<br/>
+        <input type="radio" name="appointment" value="followup_visit">Follow up visit<br/>
+
+        <br/><br/>
+        Tell us something about your appointment <br/>
+        <textarea name="message" rows="8" cols="40" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet lectus proin nibh nisl condimentum id. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu."></textarea>
+        <br/>
+        <br/>
+        <input type="submit" value="Submit your data">
+    </form>   
+</body>
+</html>
